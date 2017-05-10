@@ -16,6 +16,7 @@ loadConfig().then((c) => {
   config = c;
 }, (err) => {
   console.log('Unable to load config');
+  console.trace(err);
   process.exit(1);
 });
 
